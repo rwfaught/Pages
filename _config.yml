@@ -1,0 +1,4 @@
+title: "Qwen3.8-27B on a 5090 Laptop"
+description: "Q4 vs NVFP4 performance and coding-agent investigation"
+markdown: kramdown
+permalink: pretty
