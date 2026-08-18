@@ -4,7 +4,9 @@ title: "Qwen3.8-27B on a 5090 Laptop: Q4 vs NVFP4"
 description: "A practical investigation of Qwen3.8-27B performance, context scaling, VRAM use, and coding-agent behavior on a 24 GB RTX 5090 Laptop GPU."
 ---
 
-# Follow-up: I went down the Qwen3.8 5090 rabbit hole and I think I finally understand what I was seeing
+# Follow-up: 
+
+I went down the Qwen3.8 5090 rabbit hole and I think I finally understand what I was seeing
 
 I said I was going to dig into this because my results on a 5090 laptop looked way different from yours, and I think I finally have enough data to explain most of it. This mostly started with your earlier llama.cpp numbers. I’m not treating my laptop as a clean hardware A/B against everything in this newer vLLM/NInfer/SGLang post because obviously it isn’t: different GPU class, different OS in the earlier run, different weights, different runtime settings, different cache setup, etc. What I wanted to know was why the difference looked so enormous, and whether my llama.cpp setup was leaving a bunch of performance on the table.
 
